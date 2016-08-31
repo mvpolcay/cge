@@ -1,0 +1,261 @@
+/*
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    }
+
+body {
+    -webkit-touch-callout: none;                
+    -webkit-text-size-adjust: none;             
+    -webkit-user-select: none;                  
+    background-color:#E4E4E4;
+    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #A7A7A7),
+        color-stop(0.51, #E4E4E4)
+    );
+    background-attachment:fixed;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    text-transform:uppercase;
+    width:100%;
+}
+
+
+.app {
+    background:url(../img/logo.png) no-repeat center top;
+    position:absolute;             
+    left:50%;
+    top:50%;
+    height:50px;                   
+    width:225px;                   
+    text-align:center;
+    padding:180px 0px 0px 0px;    
+    margin:-115px 0px 0px -112px;  
+                                   
+}
+
+
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position:left center;
+        padding:75px 0px 75px 170px;  
+        margin:-90px 0px 0px -198px;  
+                                      
+    }
+}
+
+h1 {
+    font-size:24px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+
+.event {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    font-size:12px;
+    margin:0px 30px;
+    padding:2px 0px;
+}
+
+.event.listening {
+    background-color:#333333;
+    display:block;
+}
+
+.event.received {
+    background-color:#4B946A;
+    display:none;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
+*/
+
+
+body {
+    -webkit-touch-callout: none;                
+    -webkit-text-size-adjust: none;             
+    -webkit-user-select: none;                  
+    background-color:#E4E4E4;
+    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #A7A7A7),
+        color-stop(0.51, #E4E4E4)
+    );
+    background-attachment:fixed;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    //text-transform:uppercase;
+    width:100%;
+}
+
+.apparea {
+    position:relative;
+    background-position:center center;              
+}
+
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .apparea {
+        background-position:left center;           
+    }
+}
+
+
+
+.loginScreen{
+    background-image: url(../img/screen.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    max-width: 100%;
+    height: 100vh;
+}
+
+.screenLogo{
+    text-align: center;
+    line-height: 50px;
+    padding: 30%;
+}
+
+.titleLogo{
+    font-size: 50px;
+    width: 100%;
+    height: 100%;
+    background-color: #e3e3e3;
+    color: #090909;
+    -webkit-border-radius: 100%;
+            border-radius: 100%;
+}
+
+.row{padding-top:-20px;}
+
+.screenForm{
+    margin-top: 10%;
+    padding: 10%;
+    text-align: center;
+}
+.userName{
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    background:#ffffff;
+    display: inline-block;
+}
+.userName>input{
+    width: 90%;
+    display: inline-block;
+    border:none;
+    outline:0 none;
+    float: right;
+}
+.userName>span{
+    font-size: 25px;
+}
+.password{
+    width: 90%;
+    height: 100%;
+    padding: 5%;
+    background:#ffffff;
+    display: inline-block;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.password>input{
+    width: 85%;
+    display: inline-block;
+    border:none;
+    outline:0 none;
+    float: right;
+}
+.password>span{
+    font-size: 25px;
+}
+.screenForm-btn{
+    width: 90%;
+    height: 100%;
+    background-color: #FFF;
+    display: block;
+    font-size: 17px;
+    margin-top: 10%;
+    padding: 5%;
+    font-weight: bold;
+    text-decoration: none;
+    color:#000;
+    margin-left: 5%;
+    margin-right: 5%;
+    -webkit-transition: 450ms;
+       -moz-transition: 450ms;
+        -ms-transition: 450ms;
+         -o-transition: 450ms;
+            transition: 450ms;
+}
+.screenForm-btn:hover,.screenForm-btn:focus{
+    color: #808080;
+}
+.createAccount{
+    margin-top: 10%;
+    color: #808080;
+    float: left;
+    display: inline-block;
+    -webkit-transition: 450ms;
+       -moz-transition: 450ms;
+        -ms-transition: 450ms;
+         -o-transition: 450ms;
+            transition: 450ms;
+}
+.needHelp{
+    margin-top: 10%;
+    display: inline-block;
+    float: right;
+    color: #808080;
+    -webkit-transition: 450ms;
+       -moz-transition: 450ms;
+        -ms-transition: 450ms;
+         -o-transition: 450ms;
+            transition: 450ms;
+}
+.needHelp:hover,.needHelp:focus{
+    color: #fff;
+}
+.createAccount:hover,.createAccount:focus{
+    color: #fff;
+}
